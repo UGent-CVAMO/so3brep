@@ -1,0 +1,3 @@
+# Tab. 1: SO3brep on MFCAD++
+base: ../base/mfcad.yaml
+out: runs/benchmark

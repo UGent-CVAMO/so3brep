@@ -1,0 +1,3 @@
+# Tab. 2: SO3brep on BenDFM
+base: ../base/bendfm.yaml
+out: runs/benchmark

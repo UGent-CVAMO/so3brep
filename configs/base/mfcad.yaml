@@ -1,0 +1,4 @@
+# MFCAD++ segmentation: 25 machining features per face
+data:
+  dataset: mfcad
+  root: ${SO3BREP_DATA:-data}/mfcad++

@@ -1,0 +1,8 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+/runs/
+/data/
+*.ckpt
+lightning_logs/
+wandb/

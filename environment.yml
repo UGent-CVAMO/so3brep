@@ -1,0 +1,26 @@
+# Tested environment (Linux, CUDA 12.1). Create with:
+#   conda env create -f environment.yml && conda activate so3brep
+# For another CUDA version, change the PyTorch index URL and the DGL wheel folder below.
+name: so3brep
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pythonocc-core=7.9.0      # only needed to process STEP files
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - --find-links https://data.dgl.ai/wheels/torch-2.3/cu121/repo.html
+      - torch==2.3.1
+      - dgl==2.4.0
+      - torch-geometric==2.6.1
+      - e3nn==0.6.0
+      - lightning==2.6.1
+      - torchmetrics==1.8.2
+      - numpy
+      - scikit-learn
+      - pyyaml
+      - tqdm
+      - trimesh==4.11.3
+      - embreex
+      - rtree

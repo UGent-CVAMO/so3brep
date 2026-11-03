@@ -1,0 +1,3 @@
+# Tab. 3: invariant message function on MFTRCAD, 100 training parts
+base: mftrcad_invariant.yaml
+data: {train_subset: 100}

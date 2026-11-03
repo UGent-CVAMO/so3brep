@@ -1,0 +1,5 @@
+# Tab. 3: cg message function on MFTRCAD
+base: ../base/mftrcad.yaml
+model: {message: cg}
+train: {epochs: 3000}   # length of the cosine schedule; early stopping ends the run
+out: runs/message_functions

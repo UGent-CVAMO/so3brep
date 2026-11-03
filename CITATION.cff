@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "SO(3)-Equivariant Learning on CAD Boundary Representations"
+authors:
+  - family-names: Ballegeer
+    given-names: Matteo
+    affiliation: "Ghent University; CVAMO, FlandersMake@UGent"
+  - family-names: Benoit
+    given-names: Dries F.
+    affiliation: "Ghent University; CVAMO, FlandersMake@UGent"
+type: software
+license: GPL-3.0-only
+repository-code: "https://github.com/UGent-CVAMO/so3brep"
+preferred-citation:
+  type: conference-paper
+  title: "SO(3)-Equivariant Learning on CAD Boundary Representations"
+  authors:
+    - family-names: Ballegeer
+      given-names: Matteo
+    - family-names: Benoit
+      given-names: Dries F.
+  collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+  year: 2026

@@ -1,0 +1,18 @@
+# Tool settings only; the code runs from the repository root (python -m train.train ...).
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E741"]   # l is the degree of an irrep
+
+[tool.ruff.lint.isort]
+known-first-party = ["dataloaders", "eval", "models", "pipeline", "train"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = ["data: needs the preprocessed datasets (SO3BREP_DATA)"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning", "ignore::UserWarning"]

@@ -1,0 +1,4 @@
+# SolidLetters classification: 26 letters, label from the file name
+data:
+  dataset: solidletters
+  root: ${SO3BREP_DATA:-data}/solidletters

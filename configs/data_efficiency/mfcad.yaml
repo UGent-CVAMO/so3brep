@@ -1,0 +1,4 @@
+# Fig. 3: SO3brep on MFCAD++ subsets; train/reproduce_fig3.sh sets data.train_subset
+base: ../base/mfcad.yaml
+train: {epochs: 3000}   # length of the cosine schedule; early stopping ends the run
+out: runs/data_efficiency

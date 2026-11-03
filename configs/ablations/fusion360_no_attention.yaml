@@ -1,0 +1,5 @@
+# Fig. 4: no attention
+base: ../base/fusion360.yaml
+model: {attention: false}
+train: {epochs: 3000}   # length of the cosine schedule; early stopping ends the run
+out: runs/ablations

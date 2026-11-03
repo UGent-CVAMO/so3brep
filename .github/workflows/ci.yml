@@ -1,0 +1,25 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          python-version: "3.11"
+          channels: conda-forge
+      - name: Install
+        run: |
+          conda install -y pythonocc-core=7.9.0
+          pip install torch==2.3.1 --index-url https://download.pytorch.org/whl/cpu
+          pip install dgl==2.4.0 -f https://data.dgl.ai/wheels/torch-2.3/repo.html
+          pip install torch-geometric==2.6.1 e3nn==0.6.0 lightning==2.6.1 torchmetrics==1.8.2 \
+            numpy scikit-learn pyyaml tqdm trimesh==4.11.3 embreex rtree pytest ruff
+      - name: Lint
+        run: ruff check .
+      - name: Test
+        run: pytest -q

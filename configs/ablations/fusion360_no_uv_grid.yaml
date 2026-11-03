@@ -1,0 +1,5 @@
+# Fig. 4: no uv grid
+base: ../base/fusion360.yaml
+model: {uv_grid: false}
+train: {epochs: 3000}   # length of the cosine schedule; early stopping ends the run
+out: runs/ablations

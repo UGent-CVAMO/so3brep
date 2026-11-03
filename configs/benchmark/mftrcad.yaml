@@ -1,0 +1,3 @@
+# Tab. 1: SO3brep on MFTRCAD
+base: ../base/mftrcad.yaml
+out: runs/benchmark

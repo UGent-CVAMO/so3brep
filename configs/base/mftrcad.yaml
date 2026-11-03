@@ -1,0 +1,4 @@
+# MFTRCAD segmentation: 27 machining features per face; labels/<stem>.json
+data:
+  dataset: mftrcad
+  root: ${SO3BREP_DATA:-data}/mftrcad

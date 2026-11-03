@@ -1,0 +1,4 @@
+# Fusion 360 Gallery segmentation: 8 modelling operations per face
+data:
+  dataset: fusion360
+  root: ${SO3BREP_DATA:-data}/fusion360

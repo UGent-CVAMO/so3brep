@@ -1,0 +1,3 @@
+# Tab. 3: concat message function on Fusion 360, 100 training parts
+base: fusion360_concat.yaml
+data: {train_subset: 100}

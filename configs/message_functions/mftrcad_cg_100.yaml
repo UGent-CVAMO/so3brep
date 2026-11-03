@@ -1,0 +1,3 @@
+# Tab. 3: cg message function on MFTRCAD, 100 training parts
+base: mftrcad_cg.yaml
+data: {train_subset: 100}

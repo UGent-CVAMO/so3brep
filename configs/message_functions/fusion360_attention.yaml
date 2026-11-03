@@ -1,0 +1,5 @@
+# Tab. 3: attention message function on Fusion 360
+base: ../base/fusion360.yaml
+model: {message: attention}
+train: {epochs: 3000}   # length of the cosine schedule; early stopping ends the run
+out: runs/message_functions

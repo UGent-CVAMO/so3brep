@@ -1,0 +1,4 @@
+# Fig. 4: full model
+base: ../base/fusion360.yaml
+train: {epochs: 3000}   # length of the cosine schedule; early stopping ends the run
+out: runs/ablations

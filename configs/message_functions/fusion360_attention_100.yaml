@@ -1,0 +1,3 @@
+# Tab. 3: attention message function on Fusion 360, 100 training parts
+base: fusion360_attention.yaml
+data: {train_subset: 100}

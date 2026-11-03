@@ -1,0 +1,4 @@
+# BenDFM classification: can the sheet-metal part be bent without tool collision; labels/<stem>_labels.json
+data:
+  dataset: bendfm
+  root: ${SO3BREP_DATA:-data}/bendfm
